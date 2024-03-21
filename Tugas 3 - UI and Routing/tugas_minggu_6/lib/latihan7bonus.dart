@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'GoJek',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Beranda'),
+          title: const Text('Latihan 7 Bonus'),
         ),
         body: Column(
           children: [
