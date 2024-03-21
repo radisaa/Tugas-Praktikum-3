@@ -43,10 +43,15 @@ class MyApp extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const CircleAvatar(
-                          backgroundImage: AssetImage(
-                              'images/BURHAN-KLATEN.jpg'), // Gambar avatar
-                          radius: 50,
+                        Container(
+                          width: 100,
+                          height: 100,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.rectangle,
+                            color: Colors.grey, // Warna latar belakang kotak
+                          ),
+                          child: Image.network(
+                              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'), // Ganti dengan gambar avatar
                         ),
                         const SizedBox(height: 8),
                         Text('burhan $index'), // Nama pengguna
